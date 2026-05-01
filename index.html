@@ -292,6 +292,48 @@
       transform: rotate(-45deg);
     }
 
+    .lang-switcher {
+      display: inline-flex;
+      padding: 4px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid var(--border);
+      gap: 2px;
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+    }
+
+    .lang-switcher button {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-weight: 800;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      padding: 6px 12px;
+      min-width: 36px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .lang-switcher button:hover {
+      color: var(--primary);
+    }
+
+    .lang-switcher button.is-active {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.22);
+    }
+
+    .nav-tools {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+
     .hero {
       padding: 96px 0 72px;
       position: relative;
@@ -676,7 +718,7 @@
     }
 
     .cert-logo {
-      width: 132px;
+      width: 96px;
       max-width: 100%;
       height: auto;
       display: block;
@@ -1394,31 +1436,39 @@
       <div class="nav-top">
         <a href="#" class="logo">Hân <span>Lý</span></a>
 
-        <button
-          type="button"
-          class="nav-toggle"
-          id="nav-toggle"
-          aria-expanded="false"
-          aria-controls="site-menu"
-          aria-label="Open navigation menu"
-        >
-          <span class="nav-toggle-lines" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </button>
+        <div class="nav-tools">
+          <div class="lang-switcher" role="group" aria-label="Language">
+            <button type="button" data-lang="en" class="is-active" aria-label="English">EN</button>
+            <button type="button" data-lang="vi" aria-label="Tiếng Việt">VI</button>
+            <button type="button" data-lang="zh" aria-label="中文">中</button>
+          </div>
+
+          <button
+            type="button"
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-expanded="false"
+            aria-controls="site-menu"
+            aria-label="Open navigation menu"
+          >
+            <span class="nav-toggle-lines" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
       </div>
 
       <nav class="nav-links" id="site-menu">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#impact">ARR Impact</a>
-        <a href="#skills">Skills</a>
-        <a href="#publications">Publications</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#education">Education</a>
-        <a href="#connect">Connect</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#impact" data-i18n="nav.impact">ARR Impact</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#publications" data-i18n="nav.publications">Publications</a>
+        <a href="#certifications" data-i18n="nav.certifications">Certifications</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#connect" data-i18n="nav.connect">Connect</a>
       </nav>
     </div>
   </header>
@@ -1427,17 +1477,17 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">Business Development @ Web Wizards SG</div>
+          <div class="eyebrow" data-i18n="hero.eyebrow">Business Development @ Web Wizards SG</div>
 
-          <h1>Helping Singapore SMEs <span class="hero-lead">choose the right digital solutions for</span> <span class="growth-wheel">growth</span>.</h1>
+          <h1 data-i18n="hero.title" data-i18n-html>Helping Singapore SMEs <span class="hero-lead">choose the right digital solutions for</span> <span class="growth-wheel">growth</span>.</h1>
 
-          <p class="hero-text">
+          <p class="hero-text" data-i18n="hero.text">
             Hi, I’m Hân Lý, a Business Development Specialist at Web Wizards SG. I work with small and medium businesses to understand their goals, identify digital gaps, and recommend practical solutions across websites, SEO, e-commerce systems, AI chatbots, automation, and digital marketing.
           </p>
 
           <div class="hero-actions">
-            <a href="#connect" class="btn btn-primary">Connect With Me</a>
-            <a href="#experience" class="btn btn-outline">View Experience</a>
+            <a href="#connect" class="btn btn-primary" data-i18n="hero.cta1">Connect With Me</a>
+            <a href="#experience" class="btn btn-outline" data-i18n="hero.cta2">View Experience</a>
           </div>
         </div>
 
@@ -1451,29 +1501,29 @@
 
           <h2>Hân Lý</h2>
 
-          <p>
+          <p data-i18n="profile.tagline">
             I help SME owners cut through the noise and pick digital solutions that fit their goals, budget, and stage of growth.
           </p>
 
           <div class="quick-info">
             <div class="info-row">
-              <strong>Based In</strong>
-              Ho Chi Minh City · Working with Singapore SMEs
+              <strong data-i18n="profile.basedIn.label">Based In</strong>
+              <span data-i18n="profile.basedIn.value">Ho Chi Minh City · Working with Singapore SMEs</span>
             </div>
 
             <div class="info-row">
-              <strong>Current Role</strong>
-              Business Development Specialist
+              <strong data-i18n="profile.role.label">Current Role</strong>
+              <span data-i18n="profile.role.value">Business Development Specialist</span>
             </div>
 
             <div class="info-row">
-              <strong>Company</strong>
-              Web Wizards SG
+              <strong data-i18n="profile.company.label">Company</strong>
+              <span>Web Wizards SG</span>
             </div>
 
             <div class="info-row">
-              <strong>How I Help</strong>
-              Listen, scope, recommend, and hand off to the right technical solution.
+              <strong data-i18n="profile.howIHelp.label">How I Help</strong>
+              <span data-i18n="profile.howIHelp.value">Listen, scope, recommend, and hand off to the right technical solution.</span>
             </div>
           </div>
         </aside>
@@ -1795,40 +1845,88 @@
         </div>
 
         <div class="cert-grid">
-          <div class="cert">
-            <strong>Scaling with Google Cloud Operations</strong>
-            <span>Google Cloud Skills Boost · Issued Mar 2026 · Credential ID 06IBSFY3TIBA</span>
-          </div>
-
-          <div class="cert">
-            <strong>Modernize Infrastructure and Applications with Google Cloud</strong>
-            <span>Google Cloud Skills Boost · Issued Mar 2026 · Credential ID 7DABTZYPZOHU</span>
-          </div>
-
-          <div class="cert">
-            <strong>Innovating with Google Cloud Artificial Intelligence</strong>
-            <span>Google Cloud Skills Boost · Issued Mar 2026 · Credential ID Z42GWXAB37OK</span>
-          </div>
-
-          <div class="cert">
-            <strong>Exploring Data Transformation with Google Cloud</strong>
-            <span>Google Cloud Skills Boost · Issued Feb 2026 · Credential ID SBYIFNZD7CIN</span>
-          </div>
-
-          <div class="cert">
-            <strong>Digital Transformation with Google Cloud</strong>
-            <span>Google Cloud Skills Boost · Issued Jan 2026 · Credential ID IXHKKJQ273EA</span>
-          </div>
-
-          <div class="cert">
-            <strong>Trust and Security with Google Cloud</strong>
-            <span>Google Cloud Skills Boost · Issued Jan 2026 · Credential ID UI2GGCI6VKPK</span>
+          <div class="cert cert-brand">
+            <img
+              class="cert-logo"
+              src="cloud.webp"
+              alt="Google Cloud Skills Boost logo"
+              loading="lazy"
+            />
+            <div>
+              <strong>Scaling with Google Cloud Operations</strong>
+              <span>Google Cloud Skills Boost · Issued Mar 2026 · Credential ID 06IBSFY3TIBA</span>
+            </div>
           </div>
 
           <div class="cert cert-brand">
             <img
               class="cert-logo"
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/Unilever%20logos.png"
+              src="cloud.webp"
+              alt="Google Cloud Skills Boost logo"
+              loading="lazy"
+            />
+            <div>
+              <strong>Modernize Infrastructure and Applications with Google Cloud</strong>
+              <span>Google Cloud Skills Boost · Issued Mar 2026 · Credential ID 7DABTZYPZOHU</span>
+            </div>
+          </div>
+
+          <div class="cert cert-brand">
+            <img
+              class="cert-logo"
+              src="cloud.webp"
+              alt="Google Cloud Skills Boost logo"
+              loading="lazy"
+            />
+            <div>
+              <strong>Innovating with Google Cloud Artificial Intelligence</strong>
+              <span>Google Cloud Skills Boost · Issued Mar 2026 · Credential ID Z42GWXAB37OK</span>
+            </div>
+          </div>
+
+          <div class="cert cert-brand">
+            <img
+              class="cert-logo"
+              src="cloud.webp"
+              alt="Google Cloud Skills Boost logo"
+              loading="lazy"
+            />
+            <div>
+              <strong>Exploring Data Transformation with Google Cloud</strong>
+              <span>Google Cloud Skills Boost · Issued Feb 2026 · Credential ID SBYIFNZD7CIN</span>
+            </div>
+          </div>
+
+          <div class="cert cert-brand">
+            <img
+              class="cert-logo"
+              src="cloud.webp"
+              alt="Google Cloud Skills Boost logo"
+              loading="lazy"
+            />
+            <div>
+              <strong>Digital Transformation with Google Cloud</strong>
+              <span>Google Cloud Skills Boost · Issued Jan 2026 · Credential ID IXHKKJQ273EA</span>
+            </div>
+          </div>
+
+          <div class="cert cert-brand">
+            <img
+              class="cert-logo"
+              src="cloud.webp"
+              alt="Google Cloud Skills Boost logo"
+              loading="lazy"
+            />
+            <div>
+              <strong>Trust and Security with Google Cloud</strong>
+              <span>Google Cloud Skills Boost · Issued Jan 2026 · Credential ID UI2GGCI6VKPK</span>
+            </div>
+          </div>
+
+          <div class="cert cert-brand">
+            <img
+              class="cert-logo"
+              src="unilever.svg"
               alt="Unilever logo"
               loading="lazy"
             />
@@ -1841,7 +1939,7 @@
           <div class="cert cert-brand">
             <img
               class="cert-logo"
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/Unilever%20logos.png"
+              src="unilever.svg"
               alt="Unilever logo"
               loading="lazy"
             />
@@ -1854,7 +1952,7 @@
           <div class="cert cert-brand">
             <img
               class="cert-logo"
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/Unilever%20logos.png"
+              src="unilever.svg"
               alt="Unilever logo"
               loading="lazy"
             />
@@ -1867,7 +1965,7 @@
           <div class="cert cert-brand">
             <img
               class="cert-logo"
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/Unilever%20logos.png"
+              src="unilever.svg"
               alt="Unilever logo"
               loading="lazy"
             />

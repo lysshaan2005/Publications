@@ -352,6 +352,43 @@
       font-size: 0.94rem;
     }
 
+    .publication-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .publication-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 26px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .publication-card h3 {
+      font-size: 1.22rem;
+      line-height: 1.35;
+    }
+
+    .publication-meta {
+      color: var(--primary);
+      font-weight: 900;
+      font-size: 0.95rem;
+    }
+
+    .publication-card p {
+      color: var(--muted);
+    }
+
+    .publication-actions {
+      margin-top: auto;
+      padding-top: 8px;
+    }
+
     .education-card {
       background:
         linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(6, 182, 212, 0.08)),
@@ -391,7 +428,8 @@
       }
 
       .cards,
-      .cert-grid {
+      .cert-grid,
+      .publication-grid {
         grid-template-columns: 1fr;
       }
 
@@ -422,7 +460,7 @@
       }
     }
 
-        .logo,
+    .logo,
     .nav-links a,
     .btn,
     .profile-card,
@@ -430,6 +468,7 @@
     .timeline-item,
     .pill,
     .cert,
+    .publication-card,
     .education-card,
     .avatar img {
       transition: all 0.3s ease;
@@ -508,6 +547,16 @@
       color: var(--primary);
     }
 
+    .publication-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 45px rgba(15, 23, 42, 0.1);
+      border-color: rgba(37, 99, 235, 0.35);
+    }
+
+    .publication-card:hover h3 {
+      color: var(--primary);
+    }
+
     .education-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 28px 60px rgba(15, 23, 42, 0.13);
@@ -547,6 +596,7 @@
     .timeline-item,
     .pill,
     .cert,
+    .publication-card,
     .education-card {
       animation: fadeUp 0.7s ease both;
     }
@@ -592,6 +642,8 @@
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#publications">Publications</a>
         <a href="#certifications">Certifications</a>
         <a href="#education">Education</a>
       </nav>
@@ -607,13 +659,13 @@
           <h1>Helping SMEs grow with <span>practical digital solutions.</span></h1>
 
           <p class="hero-text">
-            Hi, I’m Hân Lý, a Business Development professional based in Singapore.
+            Hi, I’m Hân Lý, a Business Development professional based in Ho Chi Minh City.
             I help small and medium businesses understand their digital needs and connect them with solutions such as websites, SEO, digital marketing, e-commerce systems, AI chatbots, and automation.
           </p>
 
           <div class="hero-actions">
             <a href="#experience" class="btn btn-primary">View Experience</a>
-            <a href="#certifications" class="btn btn-outline">View Certifications</a>
+            <a href="#publications" class="btn btn-outline">View Publications</a>
           </div>
         </div>
 
@@ -634,7 +686,7 @@
           <div class="quick-info">
             <div class="info-row">
               <strong>Location</strong>
-              Singapore
+              Ho Chi Minh City
             </div>
 
             <div class="info-row">
@@ -644,7 +696,7 @@
 
             <div class="info-row">
               <strong>Company</strong>
-              Web Wizards SG
+              Multi Companies
             </div>
 
             <div class="info-row">
@@ -705,7 +757,7 @@
 
             <div>
               <h3>Business Development Specialist</h3>
-              <div class="company">Web Wizards SG · Part-time · Singapore · Hybrid</div>
+              <div class="company">Web Wizards SG · Part time · Singapore · Hybrid</div>
 
               <p>
                 Contributed directly to agency growth by expanding the client pipeline, strengthening relationships with SME owners, and helping more businesses adopt practical digital solutions.
@@ -726,7 +778,7 @@
 
             <div>
               <h3>Sales Representative</h3>
-              <div class="company">HQ-phu tung xe dien · Full-time</div>
+              <div class="company">HQ phu tung xe dien · Full time</div>
 
               <p>
                 Sales Representative at an electric vehicle parts and repair company, helping customers find reliable EV components, repair services, and maintenance solutions.
@@ -746,7 +798,7 @@
 
             <div>
               <h3>Sales Associate</h3>
-              <div class="company">FPT Corporation · Contract · Ho Chi Minh City, Vietnam · On-site</div>
+              <div class="company">FPT Corporation · Contract · Ho Chi Minh City, Vietnam · On site</div>
 
               <p>
                 Supported customers in choosing internet, telecommunications, and digital service solutions based on their personal or business needs.
@@ -789,6 +841,47 @@
           <span class="pill">Google Cloud Platform</span>
           <span class="pill">Business Data Management</span>
           <span class="pill">Supply Chain Analytics</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="container">
+        <div class="section-title">
+          <h2>Publications</h2>
+          <p>
+            Research focused on supply chain strategy, manufacturing resilience, global sourcing, and business adaptation in changing trade environments.
+          </p>
+        </div>
+
+        <div class="publication-grid">
+          <article class="publication-card">
+            <div class="publication-meta">University of Bolton · Apr 7, 2026</div>
+
+            <h3>Navigating Geopolitical Fragmentation: How Vietnamese Manufacturing SMEs Are Adapting Their Supply Chain Strategies in Response to the China+1 Shift and US Tariff Volatility</h3>
+
+            <p>
+              A research publication examining how Vietnamese manufacturing SMEs adapt supply chain strategies amid geopolitical fragmentation, China+1 relocation pressures, and US tariff uncertainty.
+            </p>
+
+            <div class="publication-actions">
+              <a href="https://lygiahan.vercel.app/Navigating%20Geopolitical%20Fragmentation.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Publication</a>
+            </div>
+          </article>
+
+          <article class="publication-card">
+            <div class="publication-meta">University of Greater Manchester · Dec 23, 2025</div>
+
+            <h3>Strategic Analysis and Application of Global Supply Chain Practices: Inditex’s Hybrid Sourcing for Resilience</h3>
+
+            <p>
+              A strategic analysis of Inditex’s hybrid sourcing model and how global supply chain practices support resilience, responsiveness, and operational adaptability.
+            </p>
+
+            <div class="publication-actions">
+              <a href="https://lygiahan.vercel.app/strageticanalysis.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Publication</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>

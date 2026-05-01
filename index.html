@@ -4,16 +4,105 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hân Lý | Business Development Portfolio</title>
+  <meta name="description" content="Hân Lý is a Business Development Specialist at Web Wizards SG helping Singapore SMEs grow through practical digital solutions, lead generation, websites, SEO, AI chatbots, automation, and digital strategy." />
+  <meta name="keywords" content="Hân Lý, Han Ly, business development, Web Wizards SG, portfolio, Singapore SMEs, digital solutions, lead generation, SEO, websites, AI chatbots, automation" />
+  <meta name="author" content="Hân Lý" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="theme-color" content="#eef4ff" />
+  <link rel="canonical" href="https://lygiahan.vercel.app/" />
+  <link rel="icon" type="image/jpeg" href="favicon.jpg" />
+  <link rel="apple-touch-icon" href="favicon.jpg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hân Lý Portfolio" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Hân Lý | Business Development Portfolio" />
+  <meta property="og:description" content="Business Development Specialist at Web Wizards SG helping Singapore SMEs grow with practical digital solutions, websites, SEO, automation, and AI." />
+  <meta property="og:url" content="https://lygiahan.vercel.app/" />
+  <meta property="og:image" content="https://lygiahan.vercel.app/favicon.jpg" />
+  <meta property="og:image:alt" content="Pixel-style portrait of Hân Lý" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Hân Lý | Business Development Portfolio" />
+  <meta name="twitter:description" content="Portfolio of Hân Lý, Business Development Specialist at Web Wizards SG focused on SME growth, digital solutions, and recurring revenue impact." />
+  <meta name="twitter:image" content="https://lygiahan.vercel.app/favicon.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://lygiahan.vercel.app/#website",
+          "url": "https://lygiahan.vercel.app/",
+          "name": "Hân Lý Portfolio",
+          "description": "Portfolio website for Hân Lý, Business Development Specialist at Web Wizards SG.",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://lygiahan.vercel.app/#profile",
+          "url": "https://lygiahan.vercel.app/",
+          "name": "Hân Lý | Business Development Portfolio",
+          "isPartOf": {
+            "@id": "https://lygiahan.vercel.app/#website"
+          },
+          "about": {
+            "@id": "https://lygiahan.vercel.app/#person"
+          },
+          "description": "Portfolio profile for Hân Lý highlighting business development experience, ARR impact, certifications, publications, and education."
+        },
+        {
+          "@type": "Person",
+          "@id": "https://lygiahan.vercel.app/#person",
+          "name": "Hân Lý",
+          "alternateName": "Han Ly",
+          "jobTitle": "Business Development Specialist",
+          "description": "Business Development Specialist at Web Wizards SG helping SMEs adopt practical digital solutions including websites, SEO, AI chatbots, automation, and digital marketing.",
+          "url": "https://lygiahan.vercel.app/",
+          "image": "https://lygiahan.vercel.app/favicon.jpg",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Web Wizards SG"
+          },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "The University of Bolton"
+          },
+          "knowsAbout": [
+            "Business Development",
+            "Lead Generation",
+            "Client Acquisition",
+            "SEO",
+            "Website Solutions",
+            "AI Chatbots",
+            "Automation",
+            "Digital Marketing",
+            "Supply Chain Analytics",
+            "Google Cloud"
+          ]
+        }
+      ]
+    }
+  </script>
 
   <style>
     :root {
       --bg: #f6f8fb;
-      --card: #ffffff;
+      --bg-top: #fbfdff;
+      --bg-bottom: #eef4ff;
+      --card: rgba(255, 255, 255, 0.72);
       --text: #172033;
       --muted: #667085;
       --primary: #2563eb;
       --primary-dark: #1e40af;
       --accent: #06b6d4;
+      --dreamy-pink: #f472b6;
+      --dreamy-gold: #facc15;
       --border: #e5e7eb;
       --shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
     }
@@ -29,10 +118,58 @@
     }
 
     body {
-      font-family: Inter, Arial, sans-serif;
-      background: var(--bg);
+      font-family: "Montserrat", Arial, sans-serif;
+      min-height: 100vh;
+      position: relative;
+      isolation: isolate;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 28%),
+        radial-gradient(circle at 82% 14%, rgba(6, 182, 212, 0.14), transparent 24%),
+        linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 36%, var(--bg-bottom) 100%);
       color: var(--text);
       line-height: 1.7;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      border-radius: 999px;
+      filter: blur(80px);
+      pointer-events: none;
+      opacity: 0.58;
+      z-index: 0;
+    }
+
+    body::before {
+      top: -180px;
+      left: -120px;
+      width: min(42rem, 62vw);
+      height: min(42rem, 62vw);
+      background:
+        radial-gradient(circle at 35% 35%, rgba(37, 99, 235, 0.42), transparent 46%),
+        radial-gradient(circle at 70% 60%, rgba(6, 182, 212, 0.3), transparent 42%);
+      animation: driftGlow 18s ease-in-out infinite alternate;
+    }
+
+    body::after {
+      right: -180px;
+      top: 22%;
+      width: min(38rem, 54vw);
+      height: min(38rem, 54vw);
+      background:
+        radial-gradient(circle at 40% 40%, rgba(244, 114, 182, 0.2), transparent 44%),
+        radial-gradient(circle at 62% 58%, rgba(250, 204, 21, 0.16), transparent 36%),
+        radial-gradient(circle at 70% 70%, rgba(37, 99, 235, 0.2), transparent 42%);
+      animation: driftGlowReverse 24s ease-in-out infinite alternate;
+    }
+
+    header,
+    main,
+    footer {
+      position: relative;
+      z-index: 1;
     }
 
     a {
@@ -62,6 +199,13 @@
       gap: 24px;
     }
 
+    .nav-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
     .logo {
       font-size: 1.1rem;
       font-weight: 800;
@@ -85,8 +229,102 @@
       color: var(--primary);
     }
 
+    .nav-toggle {
+      display: none;
+      width: 54px;
+      height: 54px;
+      border: 1px solid rgba(37, 99, 235, 0.14);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(18px);
+      cursor: pointer;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .nav-toggle:hover {
+      transform: translateY(-2px);
+      border-color: rgba(37, 99, 235, 0.34);
+      box-shadow: 0 14px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    .nav-toggle-lines {
+      width: 22px;
+      height: 16px;
+      position: relative;
+    }
+
+    .nav-toggle-lines span {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      border-radius: 999px;
+      background: var(--text);
+      transition: transform 0.28s ease, opacity 0.2s ease, top 0.28s ease;
+    }
+
+    .nav-toggle-lines span:nth-child(1) {
+      top: 0;
+    }
+
+    .nav-toggle-lines span:nth-child(2) {
+      top: 7px;
+    }
+
+    .nav-toggle-lines span:nth-child(3) {
+      top: 14px;
+    }
+
+    .nav-toggle.is-open .nav-toggle-lines span:nth-child(1) {
+      top: 7px;
+      transform: rotate(45deg);
+    }
+
+    .nav-toggle.is-open .nav-toggle-lines span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggle.is-open .nav-toggle-lines span:nth-child(3) {
+      top: 7px;
+      transform: rotate(-45deg);
+    }
+
     .hero {
       padding: 96px 0 72px;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .hero::before {
+      width: 540px;
+      height: 540px;
+      top: -180px;
+      right: -140px;
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.55), transparent 65%);
+      animation: driftGlow 18s ease-in-out infinite alternate;
+    }
+
+    .hero::after {
+      width: 480px;
+      height: 480px;
+      bottom: -200px;
+      left: -120px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.45), transparent 65%);
+      animation: driftGlowReverse 22s ease-in-out infinite alternate;
     }
 
     .hero-grid {
@@ -94,6 +332,7 @@
       grid-template-columns: 1.25fr 0.75fr;
       gap: 40px;
       align-items: center;
+      perspective: 1400px;
     }
 
     .eyebrow {
@@ -118,6 +357,32 @@
 
     .hero h1 span {
       color: var(--primary);
+    }
+
+    .hero-lead {
+      color: var(--accent);
+    }
+
+    .growth-wheel {
+      display: inline-block;
+      color: transparent;
+      background: linear-gradient(
+        90deg,
+        #2563eb,
+        #06b6d4,
+        #22c55e,
+        #facc15,
+        #f97316,
+        #ec4899,
+        #8b5cf6,
+        #2563eb
+      );
+      background-size: 220% 220%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: growthColorFlow 4.2s linear infinite;
+      text-shadow: 0 0 22px rgba(37, 99, 235, 0.16);
+      will-change: background-position, filter;
     }
 
     .hero-text {
@@ -168,14 +433,64 @@
     }
 
     .profile-card {
+      position: relative;
       background:
-        radial-gradient(circle at top right, rgba(6, 182, 212, 0.16), transparent 35%),
-        var(--card);
-      border: 1px solid var(--border);
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.45), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(15, 23, 42, 0.05), transparent 60%),
+        linear-gradient(155deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.14));
+      border: 1px solid rgba(255, 255, 255, 0.45);
       border-radius: 32px;
       padding: 30px;
-      box-shadow: var(--shadow);
+      -webkit-backdrop-filter: blur(28px) saturate(115%);
+      backdrop-filter: blur(28px) saturate(115%);
+      box-shadow:
+        0 20px 45px rgba(15, 23, 42, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6),
+        inset 0 -1px 0 rgba(15, 23, 42, 0.04);
+      transform-style: preserve-3d;
+      transform:
+        translate3d(0, var(--lift, 0px), 0)
+        rotateX(var(--ry, 0deg))
+        rotateY(var(--rx, 0deg));
+      will-change: transform;
+      overflow: hidden;
+      isolation: isolate;
     }
+
+    .profile-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: radial-gradient(
+        260px circle at var(--mx, 50%) var(--my, 30%),
+        rgba(255, 255, 255, 0.55),
+        rgba(255, 255, 255, 0) 60%
+      );
+      opacity: var(--shine, 0);
+      pointer-events: none;
+      mix-blend-mode: screen;
+      transition: opacity 0.45s ease;
+      z-index: 1;
+    }
+
+    .profile-card > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .profile-card .avatar,
+    .profile-card h2,
+    .profile-card > p,
+    .profile-card .quick-info {
+      transform: translateZ(var(--depth, 0px));
+      transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .profile-card .avatar { --depth: 60px; }
+    .profile-card h2 { --depth: 42px; }
+    .profile-card > p { --depth: 30px; }
+    .profile-card .quick-info { --depth: 20px; }
 
     .avatar {
       width: 120px;
@@ -183,8 +498,8 @@
       border-radius: 30px;
       overflow: hidden;
       margin-bottom: 22px;
-      border: 4px solid #ffffff;
-      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.16);
+      border: 4px solid rgba(255, 255, 255, 0.85);
+      box-shadow: 0 18px 36px rgba(15, 23, 42, 0.22);
       background: linear-gradient(135deg, var(--primary), var(--accent));
     }
 
@@ -257,6 +572,7 @@
       border: 1px solid var(--border);
       border-radius: 26px;
       padding: 24px;
+      backdrop-filter: blur(20px);
       box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
     }
 
@@ -282,6 +598,7 @@
       border: 1px solid var(--border);
       border-radius: 28px;
       padding: 26px;
+      backdrop-filter: blur(20px);
       box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
     }
 
@@ -340,6 +657,7 @@
       border: 1px solid var(--border);
       border-radius: 22px;
       padding: 20px;
+      backdrop-filter: blur(20px);
     }
 
     .cert strong {
@@ -350,6 +668,18 @@
     .cert span {
       color: var(--muted);
       font-size: 0.94rem;
+    }
+
+    .cert-brand {
+      display: grid;
+      gap: 14px;
+    }
+
+    .cert-logo {
+      width: 132px;
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
 
     .publication-grid {
@@ -363,6 +693,7 @@
       border: 1px solid var(--border);
       border-radius: 28px;
       padding: 26px;
+      backdrop-filter: blur(20px);
       box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
       display: flex;
       flex-direction: column;
@@ -396,6 +727,7 @@
       border: 1px solid var(--border);
       border-radius: 30px;
       padding: 30px;
+      backdrop-filter: blur(20px);
       box-shadow: var(--shadow);
     }
 
@@ -421,12 +753,325 @@
       font-size: 0.94rem;
     }
 
+    .experience-group {
+      display: grid;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .experience-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .group-label {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      padding: 6px 0 6px 14px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .skill-group {
+      margin-bottom: 26px;
+    }
+
+    .skill-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-group h3 {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 14px;
+    }
+
+    .connect-card {
+      background:
+        linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(6, 182, 212, 0.08)),
+        var(--card);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+      display: grid;
+      gap: 16px;
+      animation: fadeUp 0.7s ease both;
+      transition: all 0.3s ease;
+    }
+
+    .connect-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 28px 60px rgba(15, 23, 42, 0.13);
+      border-color: rgba(37, 99, 235, 0.35);
+    }
+
+    .connect-card h3 {
+      font-size: 1.4rem;
+    }
+
+    .connect-card p {
+      color: var(--muted);
+      max-width: 640px;
+    }
+
+    .connect-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 6px;
+    }
+
+    .impact-board {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .impact-chart-card,
+    .impact-summary {
+      background:
+        linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(6, 182, 212, 0.08)),
+        var(--card);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 28px;
+      backdrop-filter: blur(20px);
+      box-shadow: var(--shadow);
+    }
+
+    .impact-chart-card {
+      display: grid;
+      gap: 22px;
+    }
+
+    .impact-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .impact-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.1);
+      color: var(--primary-dark);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .impact-toggle {
+      display: inline-flex;
+      padding: 4px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid var(--border);
+      gap: 4px;
+    }
+
+    .impact-toggle button {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-weight: 800;
+      padding: 10px 16px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .impact-toggle button.is-active {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.22);
+    }
+
+    .impact-chart-meta {
+      display: grid;
+      gap: 6px;
+    }
+
+    .impact-chart-meta h3 {
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+
+    .impact-chart-meta p {
+      color: var(--muted);
+      max-width: 640px;
+    }
+
+    .impact-chart {
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      gap: 18px;
+      align-items: stretch;
+      min-height: 360px;
+    }
+
+    .impact-axis {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-align: right;
+      padding: 8px 0 38px;
+    }
+
+    .impact-plot {
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-evenly;
+      gap: 18px;
+      border-radius: 24px;
+      padding: 24px 24px 72px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.18)),
+        rgba(255, 255, 255, 0.46);
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .impact-plot::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to top, rgba(37, 99, 235, 0.08) 1px, transparent 1px);
+      background-size: 100% 25%;
+      z-index: -1;
+    }
+
+    .impact-bar-wrap {
+      flex: 1;
+      max-width: 220px;
+      display: grid;
+      justify-items: center;
+      align-self: stretch;
+    }
+
+    .impact-bar {
+      --target-height: 10%;
+      width: min(100%, 140px);
+      align-self: end;
+      height: 0;
+      border-radius: 28px 28px 16px 16px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.45), transparent 26%),
+        linear-gradient(180deg, var(--accent), var(--primary));
+      box-shadow: 0 18px 35px rgba(37, 99, 235, 0.24);
+      position: relative;
+      transition: height 1s cubic-bezier(0.22, 1, 0.36, 1), transform 0.3s ease;
+    }
+
+    .impact-bar.secondary {
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.42), transparent 28%),
+        linear-gradient(180deg, #8b5cf6, #2563eb);
+    }
+
+    .impact-chart.is-visible .impact-bar {
+      height: var(--target-height);
+    }
+
+    .impact-bar:hover {
+      transform: translateY(-6px);
+    }
+
+    .impact-bar-value {
+      position: absolute;
+      left: 50%;
+      top: 18px;
+      transform: translateX(-50%);
+      width: calc(100% - 24px);
+      text-align: center;
+      color: white;
+      font-size: 0.95rem;
+      font-weight: 900;
+      line-height: 1.2;
+      text-shadow: 0 2px 14px rgba(15, 23, 42, 0.3);
+    }
+
+    .impact-bar-label {
+      position: absolute;
+      left: 50%;
+      bottom: -46px;
+      transform: translateX(-50%);
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text);
+      width: max-content;
+    }
+
+    .impact-summary {
+      display: grid;
+      gap: 16px;
+      align-content: start;
+    }
+
+    .impact-summary h3 {
+      font-size: 1.35rem;
+      line-height: 1.2;
+    }
+
+    .impact-summary p {
+      color: var(--muted);
+    }
+
+    .impact-stat {
+      padding: 18px 20px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.65);
+      border: 1px solid rgba(37, 99, 235, 0.12);
+    }
+
+    .impact-stat strong {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+
+    .impact-stat span {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      color: var(--text);
+    }
+
+    .impact-footnote {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+
     @media (max-width: 900px) {
       .hero-grid,
       .timeline-item {
         grid-template-columns: 1fr;
       }
 
+      .impact-board,
       .cards,
       .cert-grid,
       .publication-grid {
@@ -434,20 +1079,72 @@
       }
 
       .nav {
-        align-items: flex-start;
+        align-items: stretch;
         flex-direction: column;
-        padding: 18px 0;
+        gap: 12px;
+        padding: 10px 0;
+      }
+
+      .nav-top {
+        width: 100%;
+        min-height: 64px;
+      }
+
+      .nav-toggle {
+        display: inline-flex;
       }
 
       .nav-links {
-        flex-wrap: wrap;
-        gap: 14px;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
+        transition: max-height 0.35s ease, opacity 0.25s ease, padding-bottom 0.25s ease;
+      }
+
+      .nav-links.is-open {
+        max-height: 560px;
+        opacity: 1;
+        pointer-events: auto;
+        padding-bottom: 12px;
+      }
+
+      .nav-links a {
+        padding: 14px 16px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.64);
+        border: 1px solid rgba(37, 99, 235, 0.08);
       }
     }
 
     @media (max-width: 560px) {
       .hero {
         padding-top: 62px;
+      }
+
+      .impact-chart {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .impact-axis {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: left;
+        padding: 0;
+      }
+
+      .impact-plot {
+        min-height: 320px;
+        padding: 22px 16px 72px;
+      }
+
+      .impact-bar-value {
+        font-size: 0.88rem;
       }
 
       .profile-card {
@@ -500,13 +1197,32 @@
     }
 
     .profile-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 28px 60px rgba(15, 23, 42, 0.14);
-      border-color: rgba(37, 99, 235, 0.35);
+      --lift: -10px;
+      --shine: 1;
+      box-shadow:
+        0 32px 70px rgba(15, 23, 42, 0.22),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85),
+        inset 0 -1px 0 rgba(15, 23, 42, 0.05);
+      border-color: rgba(255, 255, 255, 0.75);
     }
 
     .profile-card:hover .avatar img {
       transform: scale(1.08);
+    }
+
+    .profile-card,
+    .profile-card.is-tilting {
+      transition:
+        transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+    }
+
+    .profile-card.is-tilting {
+      transition:
+        transform 0.08s linear,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
     }
 
     .card:hover {
@@ -591,6 +1307,38 @@
       }
     }
 
+    @keyframes driftGlow {
+      from {
+        transform: translate3d(0, 0, 0) scale(1);
+      }
+
+      to {
+        transform: translate3d(90px, 70px, 0) scale(1.14);
+      }
+    }
+
+    @keyframes driftGlowReverse {
+      from {
+        transform: translate3d(0, 0, 0) scale(1);
+      }
+
+      to {
+        transform: translate3d(-120px, 90px, 0) scale(1.18);
+      }
+    }
+
+    @keyframes growthColorFlow {
+      from {
+        background-position: 0% 50%;
+        filter: hue-rotate(0deg);
+      }
+
+      to {
+        background-position: 200% 50%;
+        filter: hue-rotate(360deg);
+      }
+    }
+
     .hero-grid,
     .card,
     .timeline-item,
@@ -631,21 +1379,46 @@
     .pill:nth-child(4) {
       animation-delay: 0.12s;
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      .growth-wheel {
+        animation: none;
+      }
+    }
   </style>
 </head>
 
 <body>
   <header>
     <div class="container nav">
-      <a href="#" class="logo">Hân <span>Lý</span></a>
+      <div class="nav-top">
+        <a href="#" class="logo">Hân <span>Lý</span></a>
 
-      <nav class="nav-links">
+        <button
+          type="button"
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          aria-label="Open navigation menu"
+        >
+          <span class="nav-toggle-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+
+      <nav class="nav-links" id="site-menu">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
+        <a href="#impact">ARR Impact</a>
         <a href="#skills">Skills</a>
         <a href="#publications">Publications</a>
         <a href="#certifications">Certifications</a>
         <a href="#education">Education</a>
+        <a href="#connect">Connect</a>
       </nav>
     </div>
   </header>
@@ -656,23 +1429,22 @@
         <div>
           <div class="eyebrow">Business Development @ Web Wizards SG</div>
 
-          <h1>Helping SMEs grow with <span>practical digital solutions.</span></h1>
+          <h1>Helping Singapore SMEs <span class="hero-lead">choose the right digital solutions for</span> <span class="growth-wheel">growth</span>.</h1>
 
           <p class="hero-text">
-            Hi, I’m Hân Lý, a Business Development professional based in Ho Chi Minh City.
-            I help small and medium businesses understand their digital needs and connect them with solutions such as websites, SEO, digital marketing, e-commerce systems, AI chatbots, and automation.
+            Hi, I’m Hân Lý, a Business Development Specialist at Web Wizards SG. I work with small and medium businesses to understand their goals, identify digital gaps, and recommend practical solutions across websites, SEO, e-commerce systems, AI chatbots, automation, and digital marketing.
           </p>
 
           <div class="hero-actions">
-            <a href="#experience" class="btn btn-primary">View Experience</a>
-            <a href="#publications" class="btn btn-outline">View Publications</a>
+            <a href="#connect" class="btn btn-primary">Connect With Me</a>
+            <a href="#experience" class="btn btn-outline">View Experience</a>
           </div>
         </div>
 
         <aside class="profile-card">
           <div class="avatar">
             <img
-              src="https://media.licdn.com/dms/image/v2/D5603AQFKC0B_x-WhaQ/profile-displayphoto-scale_200_200/B56Z3S7nr5H4AY-/0/1777360338758?e=1779321600&v=beta&t=j65pVKCRR3BLXC0j921TJUdEZcoLh-1iQWdzQvxDKFs"
+              src="favicon.jpg"
               alt="Hân Lý profile photo"
             />
           </div>
@@ -680,13 +1452,13 @@
           <h2>Hân Lý</h2>
 
           <p>
-            Business Development professional with experience across digital solutions, sales, customer communication, and business growth.
+            I help SME owners cut through the noise and pick digital solutions that fit their goals, budget, and stage of growth.
           </p>
 
           <div class="quick-info">
             <div class="info-row">
-              <strong>Location</strong>
-              Ho Chi Minh City
+              <strong>Based In</strong>
+              Ho Chi Minh City · Working with Singapore SMEs
             </div>
 
             <div class="info-row">
@@ -696,12 +1468,12 @@
 
             <div class="info-row">
               <strong>Company</strong>
-              Multi Companies
+              Web Wizards SG
             </div>
 
             <div class="info-row">
-              <strong>Focus</strong>
-              SME growth, digital transformation, sales, client acquisition
+              <strong>How I Help</strong>
+              Listen, scope, recommend, and hand off to the right technical solution.
             </div>
           </div>
         </aside>
@@ -713,29 +1485,29 @@
         <div class="section-title">
           <h2>About Me</h2>
           <p>
-            I focus on helping businesses adopt digital tools that improve online presence, customer acquisition, and day to day operations.
+            I enjoy working with SME owners who know they need to improve their online presence but are not sure where to start. My role is to listen, understand the business problem, and recommend digital solutions that are realistic, affordable, and useful.
           </p>
         </div>
 
         <div class="cards">
           <article class="card">
-            <h3>Business Development</h3>
+            <h3>How I Work</h3>
             <p>
-              Experienced in identifying SME leads, building client relationships, following up with prospects, and supporting client onboarding.
+              I get to know the business first, goals, pain points, and budget, before recommending anything. Trust comes first; the proposal comes after.
             </p>
           </article>
 
           <article class="card">
-            <h3>Digital Solutions</h3>
+            <h3>What I Bring</h3>
             <p>
-              Familiar with websites, SEO, digital marketing, e-commerce systems, AI chatbots, and automation solutions for business growth.
+              I translate business needs into clear project requirements that technical teams can act on, then guide clients through scoping, proposals, and onboarding.
             </p>
           </article>
 
           <article class="card">
-            <h3>Data Driven Thinking</h3>
+            <h3>Where I Add Value</h3>
             <p>
-              Academic and certification background in business data management, supply chain analytics, Google Cloud, and digital transformation.
+              A business administration background plus Google Cloud, AI, and supply chain analytics certifications help me discuss digital transformation in plain, practical language.
             </p>
           </article>
         </div>
@@ -747,71 +1519,182 @@
         <div class="section-title">
           <h2>Experience</h2>
           <p>
-            A background across business development, sales, customer relationships, technology services, and telecommunications.
+            Roles grouped by what each one taught me, business development outcomes first, followed by the customer-facing roles that built the foundation.
           </p>
         </div>
 
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="date">Feb 2025 to Present</div>
+        <div class="experience-group">
+          <div class="group-label">Relevant Business Development Experience</div>
 
-            <div>
-              <h3>Business Development Specialist</h3>
-              <div class="company">Web Wizards SG · Part time · Singapore · Hybrid</div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="date">Feb 2025 to Present</div>
 
-              <p>
-                Contributed directly to agency growth by expanding the client pipeline, strengthening relationships with SME owners, and helping more businesses adopt practical digital solutions.
+              <div>
+                <h3>Business Development Specialist</h3>
+                <div class="company">Web Wizards SG · Part time · Singapore · Hybrid</div>
+
+                <p>
+                  Contributed directly to agency growth by expanding the client pipeline, strengthening relationships with SME owners, and helping more businesses adopt digital solutions that fit their stage.
+                </p>
+
+                <ul class="bullets">
+                  <li>Generated qualified SME leads across retail, services, and local business sectors through direct outreach, follow ups, and needs based consultation.</li>
+                  <li>Matched client pain points to suitable solutions including websites, SEO, AI chatbots, and online marketing, then translated them into clear briefs for the technical team.</li>
+                  <li>Ran proposal discussions, scoping conversations, and onboarding handovers to keep clients confident from first call to project kick off.</li>
+                  <li>Helped position Web Wizards SG as an affordable, practical digital partner for Singapore SMEs, contributing to a stronger and more consistent client pipeline.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="date">Dec 2024 to Mar 2025 · 4 mos</div>
+
+              <div>
+                <h3>Business Development Specialist</h3>
+                <div class="company">LAFF Marketing Vietnam · Internship · Ho Chi Minh City Metropolitan Area</div>
+
+                <p>
+                  Supported the BD team in identifying new business opportunities, researching potential clients, and shaping outreach for the agency’s marketing services. Built a stronger business mindset and hands on exposure to how agencies create value through branding, digital marketing, and growth focused campaigns.
+                </p>
+
+                <ul class="bullets">
+                  <li>Carried out market research and tracked industry trends to surface promising client segments and conversation angles.</li>
+                  <li>Generated leads and prospected potential clients, then helped tailor outreach based on each company’s context and needs.</li>
+                  <li>Assisted with proposal and presentation preparation, translating client requirements into clear, persuasive materials.</li>
+                  <li>Strengthened skills in sales strategy, business communication, and relationship building inside a fast moving marketing environment.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="experience-group">
+          <div class="group-label">Sales and Customer Experience</div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="date">Jan 2026 to Mar 2026</div>
+
+              <div>
+                <h3>Sales Associate</h3>
+                <div class="company">FPT Corporation · Contract · Ho Chi Minh City, Vietnam · On site</div>
+
+                <p>
+                  Helped customers choose internet, telecommunications, and digital service plans that matched their personal or business needs.
+                </p>
+
+                <ul class="bullets">
+                  <li>Identified customer requirements and recommended suitable FPT Telecom products and service packages.</li>
+                  <li>Explained plan benefits, prepared quotations, and followed up consistently with potential customers.</li>
+                  <li>Supported clients through registration, onboarding, installation, and service activation.</li>
+                  <li>Sharpened skills in sales communication, CRM use, product consultation, and telecom services.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="date">2022 to Present</div>
+
+              <div>
+                <h3>Sales Representative</h3>
+                <div class="company">HQ phu tung xe dien · Full time</div>
+
+                <p>
+                  Long running sales role at an electric vehicle parts and repair company, helping customers find reliable EV components, repairs, and maintenance.
+                </p>
+
+                <ul class="bullets">
+                  <li>Built repeat customer relationships and identified new sales opportunities through walk ins and referrals.</li>
+                  <li>Promoted EV parts, repair services, and maintenance solutions tailored to each customer’s vehicle.</li>
+                  <li>Prepared quotations, followed up with leads, and supported customers throughout the buying process.</li>
+                  <li>Coordinated with technical and repair teams to match customers with the right parts and service options.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact">
+      <div class="container">
+        <div class="section-title">
+          <h2>ARR Impact</h2>
+          <p>
+            A simple view of the annual recurring revenue growth I helped drive at Web Wizards SG, from S$4,000 to S$12,000, with the approximate VND equivalent shown as well.
+          </p>
+        </div>
+
+        <div class="impact-board">
+          <article class="impact-chart-card">
+            <div class="impact-toolbar">
+              <div class="impact-badge">Interactive ARR Chart</div>
+
+              <div class="impact-toggle" aria-label="Switch chart currency">
+                <button type="button" class="is-active" data-currency="sgd" aria-pressed="true">SGD</button>
+                <button type="button" data-currency="vnd" aria-pressed="false">VND</button>
+              </div>
+            </div>
+
+            <div class="impact-chart-meta">
+              <h3>Growth under my leadership at Web Wizards SG</h3>
+              <p id="impact-description">
+                ARR increased from S$4,000 to S$12,000, a 3x improvement in recurring revenue.
               </p>
+            </div>
 
-              <ul class="bullets">
-                <li>Generated new business opportunities by identifying and reaching out to SME clients across multiple industries.</li>
-                <li>Converted business needs into suitable digital solutions, including websites, SEO, AI chatbots, and online marketing services.</li>
-                <li>Supported lead generation, follow ups, proposal discussions, and client onboarding.</li>
-                <li>Translated client pain points into actionable project requirements for technical teams.</li>
-                <li>Helped position Web Wizards SG as an affordable and practical digital solutions provider for Singapore SMEs.</li>
-              </ul>
+            <div class="impact-chart" id="impact-chart">
+              <div class="impact-axis" id="impact-axis" aria-hidden="true">
+                <span>S$12k</span>
+                <span>S$8k</span>
+                <span>S$4k</span>
+                <span>S$0</span>
+              </div>
+
+              <div class="impact-plot">
+                <div class="impact-bar-wrap">
+                  <div class="impact-bar" id="impact-bar-start" style="--target-height: 33.33%;">
+                    <div class="impact-bar-value" id="impact-value-start">S$4,000</div>
+                    <div class="impact-bar-label">Before</div>
+                  </div>
+                </div>
+
+                <div class="impact-bar-wrap">
+                  <div class="impact-bar secondary" id="impact-bar-end" style="--target-height: 100%;">
+                    <div class="impact-bar-value" id="impact-value-end">S$12,000</div>
+                    <div class="impact-bar-label">After</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </article>
 
-          <article class="timeline-item">
-            <div class="date">2022 to Present</div>
+          <aside class="impact-summary">
+            <h3>What the chart shows</h3>
+            <p>
+              A clear jump in recurring revenue tied to stronger lead generation, better qualification, and practical solution matching for SME clients.
+            </p>
 
-            <div>
-              <h3>Sales Representative</h3>
-              <div class="company">HQ phu tung xe dien · Full time</div>
-
-              <p>
-                Sales Representative at an electric vehicle parts and repair company, helping customers find reliable EV components, repair services, and maintenance solutions.
-              </p>
-
-              <ul class="bullets">
-                <li>Built customer relationships and identified sales opportunities.</li>
-                <li>Promoted EV parts, repair services, and maintenance solutions.</li>
-                <li>Prepared quotations, followed up with leads, and supported customers throughout the sales process.</li>
-                <li>Worked with technical and repair teams to match customers with the right solutions.</li>
-              </ul>
+            <div class="impact-stat">
+              <strong>Growth Multiple</strong>
+              <span id="impact-multiple">3x ARR</span>
             </div>
-          </article>
 
-          <article class="timeline-item">
-            <div class="date">Jan 2026 to Mar 2026</div>
-
-            <div>
-              <h3>Sales Associate</h3>
-              <div class="company">FPT Corporation · Contract · Ho Chi Minh City, Vietnam · On site</div>
-
-              <p>
-                Supported customers in choosing internet, telecommunications, and digital service solutions based on their personal or business needs.
-              </p>
-
-              <ul class="bullets">
-                <li>Identified customer requirements and promoted suitable FPT Telecom products and service packages.</li>
-                <li>Explained plan benefits, prepared quotations, and followed up with potential customers.</li>
-                <li>Supported clients during registration, onboarding, installation, and service activation.</li>
-                <li>Developed experience in sales communication, CRM, product consultation, and telecom services.</li>
-              </ul>
+            <div class="impact-stat">
+              <strong>Absolute Increase</strong>
+              <span id="impact-delta">+S$8,000</span>
             </div>
-          </article>
+
+            <div class="impact-stat">
+              <strong>Range Shown</strong>
+              <span id="impact-range">S$4,000 to S$12,000</span>
+            </div>
+
+            <p class="impact-footnote">
+              VND figures are presented as approximate rounded equivalents based on your stated comparison: 80 million VND to 250 million VND.
+            </p>
+          </aside>
         </div>
       </div>
     </section>
@@ -821,26 +1704,42 @@
         <div class="section-title">
           <h2>Skills</h2>
           <p>
-            A practical mix of business development, sales, digital transformation, and data focused business knowledge.
+            Capability keywords, grouped so you can scan what is most relevant to your role or project.
           </p>
         </div>
 
-        <div class="skills-wrap">
-          <span class="pill">Business Development</span>
-          <span class="pill">Lead Generation</span>
-          <span class="pill">Client Acquisition</span>
-          <span class="pill">Sales Communication</span>
-          <span class="pill">Client Relationship Management</span>
-          <span class="pill">Proposal Discussion</span>
-          <span class="pill">Customer Onboarding</span>
-          <span class="pill">Digital Marketing</span>
-          <span class="pill">SEO</span>
-          <span class="pill">Website Solutions</span>
-          <span class="pill">AI Chatbots</span>
-          <span class="pill">E-commerce Systems</span>
-          <span class="pill">Google Cloud Platform</span>
-          <span class="pill">Business Data Management</span>
-          <span class="pill">Supply Chain Analytics</span>
+        <div class="skill-group">
+          <h3>Business Development</h3>
+          <div class="skills-wrap">
+            <span class="pill">Lead Generation</span>
+            <span class="pill">Client Acquisition</span>
+            <span class="pill">Sales Communication</span>
+            <span class="pill">Client Relationship Management</span>
+            <span class="pill">Proposal Discussion</span>
+            <span class="pill">Customer Onboarding</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Digital Solutions</h3>
+          <div class="skills-wrap">
+            <span class="pill">Website Solutions</span>
+            <span class="pill">SEO</span>
+            <span class="pill">E-commerce Systems</span>
+            <span class="pill">AI Chatbots</span>
+            <span class="pill">Automation</span>
+            <span class="pill">Digital Marketing</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Business Knowledge</h3>
+          <div class="skills-wrap">
+            <span class="pill">Google Cloud Platform</span>
+            <span class="pill">Business Data Management</span>
+            <span class="pill">Supply Chain Analytics</span>
+            <span class="pill">Digital Transformation</span>
+          </div>
         </div>
       </div>
     </section>
@@ -891,7 +1790,7 @@
         <div class="section-title">
           <h2>Licenses & Certifications</h2>
           <p>
-            Certifications across Google Cloud, digital transformation, AI, infrastructure, operations, and supply chain analytics.
+            These credentials strengthen my ability to discuss cloud, AI, data, infrastructure, and operations with business owners in a practical, business focused way.
           </p>
         </div>
 
@@ -926,24 +1825,56 @@
             <span>Google Cloud Skills Boost · Issued Jan 2026 · Credential ID UI2GGCI6VKPK</span>
           </div>
 
-          <div class="cert">
-            <strong>Unilever Supply Chain Data Analyst Specialization</strong>
-            <span>Unilever · Issued Sep 2025 · Credential ID 2694AKO6KPPU</span>
+          <div class="cert cert-brand">
+            <img
+              class="cert-logo"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Unilever%20logos.png"
+              alt="Unilever logo"
+              loading="lazy"
+            />
+            <div>
+              <strong>Unilever Supply Chain Data Analyst Specialization</strong>
+              <span>Unilever · Issued Sep 2025 · Credential ID 2694AKO6KPPU</span>
+            </div>
           </div>
 
-          <div class="cert">
-            <strong>Supply Chain Management and Analytics</strong>
-            <span>Unilever · Issued Sep 2025 · Credential ID G85Y1XMIMK5S</span>
+          <div class="cert cert-brand">
+            <img
+              class="cert-logo"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Unilever%20logos.png"
+              alt="Unilever logo"
+              loading="lazy"
+            />
+            <div>
+              <strong>Supply Chain Management and Analytics</strong>
+              <span>Unilever · Issued Sep 2025 · Credential ID G85Y1XMIMK5S</span>
+            </div>
           </div>
 
-          <div class="cert">
-            <strong>Using Data Analytics in Supply Chain</strong>
-            <span>Unilever · Issued Sep 2025 · Credential ID MWQMUQQ93N0C</span>
+          <div class="cert cert-brand">
+            <img
+              class="cert-logo"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Unilever%20logos.png"
+              alt="Unilever logo"
+              loading="lazy"
+            />
+            <div>
+              <strong>Using Data Analytics in Supply Chain</strong>
+              <span>Unilever · Issued Sep 2025 · Credential ID MWQMUQQ93N0C</span>
+            </div>
           </div>
 
-          <div class="cert">
-            <strong>Implementing Supply Chain Analytics</strong>
-            <span>Unilever · Issued Sep 2025 · Credential ID KHN8YWOC8A4Z</span>
+          <div class="cert cert-brand">
+            <img
+              class="cert-logo"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Unilever%20logos.png"
+              alt="Unilever logo"
+              loading="lazy"
+            />
+            <div>
+              <strong>Implementing Supply Chain Analytics</strong>
+              <span>Unilever · Issued Sep 2025 · Credential ID KHN8YWOC8A4Z</span>
+            </div>
           </div>
         </div>
       </div>
@@ -968,6 +1899,30 @@
         </article>
       </div>
     </section>
+
+    <section id="connect">
+      <div class="container">
+        <div class="section-title">
+          <h2>Let’s Connect</h2>
+          <p>
+            If you are an SME owner, recruiter, or partner thinking about digital growth, I would love to hear what you are working on.
+          </p>
+        </div>
+
+        <article class="connect-card">
+          <h3>Open to business development conversations</h3>
+
+          <p>
+            Tell me a little about your business and what you are trying to improve. I will come back with honest thoughts on what is worth doing first, and what can wait.
+          </p>
+
+          <div class="connect-actions">
+            <a href="https://www.linkedin.com/in/h%C3%A2n-l%C3%BD-741872325/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+            <a href="mailto:lysshaan2005@gmail.com" class="btn btn-outline">Send an Email</a>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -975,5 +1930,183 @@
       © 2026 Hân Lý. Portfolio built with HTML and CSS.
     </div>
   </footer>
+
+  <script>
+    const impactData = {
+      sgd: {
+        start: 4000,
+        end: 12000,
+        max: 12000,
+        axis: ["S$12k", "S$8k", "S$4k", "S$0"],
+        startLabel: "S$4,000",
+        endLabel: "S$12,000",
+        delta: "+S$8,000",
+        range: "S$4,000 to S$12,000",
+        description: "ARR increased from S$4,000 to S$12,000, a 3x improvement in recurring revenue."
+      },
+      vnd: {
+        start: 80,
+        end: 250,
+        max: 250,
+        axis: ["250M VND", "175M VND", "80M VND", "0"],
+        startLabel: "80 million VND",
+        endLabel: "250 million VND",
+        delta: "+170 million VND",
+        range: "80 million to 250 million VND",
+        description: "Using your stated equivalent figures, ARR increased from 80 million VND to 250 million VND."
+      }
+    };
+
+    const impactButtons = document.querySelectorAll("[data-currency]");
+    const impactAxis = document.getElementById("impact-axis");
+    const impactChart = document.getElementById("impact-chart");
+    const impactStartBar = document.getElementById("impact-bar-start");
+    const impactEndBar = document.getElementById("impact-bar-end");
+    const impactStartValue = document.getElementById("impact-value-start");
+    const impactEndValue = document.getElementById("impact-value-end");
+    const impactDescription = document.getElementById("impact-description");
+    const impactDelta = document.getElementById("impact-delta");
+    const impactRange = document.getElementById("impact-range");
+    const impactMultiple = document.getElementById("impact-multiple");
+
+    function setImpactCurrency(currency) {
+      const data = impactData[currency];
+      const startHeight = Math.max((data.start / data.max) * 100, 12);
+      const endHeight = Math.max((data.end / data.max) * 100, 12);
+
+      impactAxis.innerHTML = data.axis.map((label) => "<span>" + label + "</span>").join("");
+      impactStartBar.style.setProperty("--target-height", startHeight + "%");
+      impactEndBar.style.setProperty("--target-height", endHeight + "%");
+      impactStartValue.textContent = data.startLabel;
+      impactEndValue.textContent = data.endLabel;
+      impactDescription.textContent = data.description;
+      impactDelta.textContent = data.delta;
+      impactRange.textContent = data.range;
+      impactMultiple.textContent = (data.end / data.start).toFixed(1).replace(".0", "") + "x ARR";
+
+      impactButtons.forEach((button) => {
+        const isActive = button.dataset.currency === currency;
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-pressed", isActive ? "true" : "false");
+      });
+    }
+
+    impactButtons.forEach((button) => {
+      button.addEventListener("click", () => setImpactCurrency(button.dataset.currency));
+    });
+
+    const impactObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          impactChart.classList.add("is-visible");
+          impactObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.35 });
+
+    impactObserver.observe(impactChart);
+    setImpactCurrency("sgd");
+
+    const navToggle = document.getElementById("nav-toggle");
+    const siteMenu = document.getElementById("site-menu");
+    const siteMenuLinks = siteMenu.querySelectorAll("a");
+    const mobileNavQuery = window.matchMedia("(max-width: 900px)");
+
+    function closeMobileMenu() {
+      navToggle.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+      navToggle.setAttribute("aria-label", "Open navigation menu");
+      siteMenu.classList.remove("is-open");
+    }
+
+    function toggleMobileMenu() {
+      const isOpen = navToggle.classList.toggle("is-open");
+      navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      navToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+      siteMenu.classList.toggle("is-open", isOpen);
+    }
+
+    navToggle.addEventListener("click", toggleMobileMenu);
+
+    siteMenuLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        if (mobileNavQuery.matches) {
+          closeMobileMenu();
+        }
+      });
+    });
+
+    mobileNavQuery.addEventListener("change", (event) => {
+      if (!event.matches) {
+        closeMobileMenu();
+      }
+    });
+
+    (function setupProfileTilt() {
+      const card = document.querySelector(".profile-card");
+      if (!card) return;
+
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const isTouch = window.matchMedia("(hover: none)").matches;
+      if (reduceMotion || isTouch) return;
+
+      const MAX_TILT = 9;
+      let rect = null;
+      let frame = null;
+      let pendingRX = 0;
+      let pendingRY = 0;
+      let pendingMX = 50;
+      let pendingMY = 30;
+
+      function refreshRect() {
+        rect = card.getBoundingClientRect();
+      }
+
+      function apply() {
+        frame = null;
+        card.style.setProperty("--rx", pendingRX.toFixed(2) + "deg");
+        card.style.setProperty("--ry", pendingRY.toFixed(2) + "deg");
+        card.style.setProperty("--mx", pendingMX.toFixed(1) + "%");
+        card.style.setProperty("--my", pendingMY.toFixed(1) + "%");
+      }
+
+      function schedule() {
+        if (frame === null) frame = requestAnimationFrame(apply);
+      }
+
+      function onMove(event) {
+        if (!rect) refreshRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        const nx = Math.max(0, Math.min(1, x / rect.width));
+        const ny = Math.max(0, Math.min(1, y / rect.height));
+        pendingRX = (nx - 0.5) * 2 * MAX_TILT;
+        pendingRY = -(ny - 0.5) * 2 * MAX_TILT;
+        pendingMX = nx * 100;
+        pendingMY = ny * 100;
+        schedule();
+      }
+
+      function onEnter() {
+        refreshRect();
+        card.classList.add("is-tilting");
+      }
+
+      function onLeave() {
+        card.classList.remove("is-tilting");
+        pendingRX = 0;
+        pendingRY = 0;
+        pendingMX = 50;
+        pendingMY = 30;
+        schedule();
+      }
+
+      card.addEventListener("mouseenter", onEnter);
+      card.addEventListener("mousemove", onMove);
+      card.addEventListener("mouseleave", onLeave);
+      window.addEventListener("resize", refreshRect);
+      window.addEventListener("scroll", refreshRect, { passive: true });
+    })();
+  </script>
 </body>
 </html>
